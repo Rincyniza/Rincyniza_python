@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe hub - A recipe sharing website for cooking enthusiasts</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+  
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login/">Login</a>
+          <a href="/register">Register </a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="/categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+
+      </div>
+        <form class="example" action="/search"method="post">
+            <input type="text" placeholder="Search by title" id="keyword"name="labels" value=" ">
+            <button type="submit"><i class="gg-search"></i></button>
+        </form>
+        
+       
+    </header>
+    
+
+    <!--------categories(inner buttons)-------->
+    <main class="outerdiv"></main>
+    <section class="innerbutton1">
+        <div class="innerbutton12">
+            
+            <article class="innerbutton123">
+                <a class="link1" href="/categ">
+                <img width="100" height="100" src="../static/images/smashed avocado.jpg" class="image1" alt data-pin-nopin="true" loading="eager" sizes="(min-width: 1220px) 276px, (min-width: 820px) calc(23.95vw - 11px), (min-width: 440px) 171px, 41.67vw" decoding="async" srcset="../static/images/smashed avocado.jpg 840w,../static/images/smashed avocado.jpg 420w, ../static/images/smashed avocado.jpg 1260w, ../static/images/smashed avocado.jpg 360w,../static/images/smashed avocado.jpg 640w, ../static/images/smashed avocado.jpg 720w,../static/images/smashed avocado.jpg 1080w" /> 
+                <p class="break">Breakfast</p>
+                </a>
+            </article>
+            
+            
+            <article class="innerbutton123">
+                <a class="link1" href="/categ">
+                <img width="100" height="100" src="../static/images/spicy-shrimp.jpg" class="image1" alt data-pin-nopin="true" loading="eager" sizes="(min-width: 1220px) 276px, (min-width: 820px) calc(23.95vw - 11px), (min-width: 440px) 171px, 41.67vw" decoding="async" srcset="../static/images/spicy shrimp.jpg 840w,../static/images/spicy shrimp.jpg 420w,../static/images/spicy shrimp.jpg 1260w,../static/images/spicy shrimp.jpg 360w,../static/images/spicy shrimp.jpg 640w, ../static/images/spicy shrimp.jpg 720w,../static/images/spicy shrimp.jpg 1080w" /> 
+                <p class="break">Lunch</p>
+                </a>
+            </article>
+
+            <article class="innerbutton123">
+                <a class="link1" href="/categ">
+                <img width="100" height="100" src="../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg" class="image1" alt data-pin-nopin="true" loading="eager" sizes="(min-width: 1220px) 276px, (min-width: 820px) calc(23.95vw - 11px), (min-width: 440px) 171px, 41.67vw" decoding="async" srcset="../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 840w,../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 420w,../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 1260w,../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 360w,../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 640w, ../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 720w,../static/images/Easy-Sticky-Bourbon-Chicken-6.jpg 1080w" /> 
+                <p class="break">Dinner</p>
+                </a>
+            </article>
+
+            <article class="innerbutton123">
+                <a class="link1" href="/categ">
+                <img width="100" height="100" src="../static/images/almond butter.jpg" class="image1" alt data-pin-nopin="true" loading="eager" sizes="(min-width: 1220px) 276px, (min-width: 820px) calc(23.95vw - 11px), (min-width: 440px) 171px, 41.67vw" decoding="async" srcset="../static/images/almond butter.jpg 840w,../static/images/almond butter.jpg 420w,../static/images/almond butter.jpg 1260w,../static/images/almond butter.jpg 360w,../static/images/almond butter.jpg 640w, ../static/images/almond butter.jpg 720w,../static/images/almond butter.jpg 1080w" /> 
+                <p class="break">Dessert</p>
+                </a>
+            </article>
+        
+        </div>
+    </section>
+
+    <ul>
+        {% for recipe in recipes %}
+        <li>
+            <a href="{{url_for(list_recipe,id=recipe[0])}}">{{recipe.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+       <!----------featured recipes(left section)-->
+        <section class="leftsection">
+            <div>
+               <div class="leftdiv">
+                  <div class="leftdiv1">
+                     <h2 class="leftheading">Featured Recipes</h2>
+                     <article class="leftarticle">
+                        <div class="leftarticle1">
+                            <a class="leftlinkimage1" href="/index/">
+                            <img data-pin-description="Shiitake mushrooms with chicken wontons in a spicy,rich brothy-type sauce laced with sesame and chilli oil. WOWZA.Big,bossy flavor,incredibly satisfying,and takes exactly 15 minute to make!" width="200" height="250" src="../static/images/chicken wontons2.jpg" class="leftimage" alt="A picture of Chicken Wontons in Spicy chilli sauce" data-pin-nopin="true" sizes="(min-width: 1220px) 238px, (min-width: 780px) calc(21.43vw - 19px), 100vw" decoding="async" srcset="../static/images/chicken wontons2.jpg 800w, ../static/images/chicken wontons2.jpg 183w, ../static/images/chicken wontons2.jpg 400w, ../static/images/chicken wontons2.jpg 1200w, ../static/images/chicken wontons2.jpg 96w, ../static/images/chicken wontons2.jpg 225w, ../static/images/chicken wontons2.jpg 360w, ../static/images/chicken wontons2.jpg 640w, ../static/images/chicken wontons2.jpg 720w, ../static/images/chicken wontons2.jpg 960w, ../static/images/chicken wontons2.jpg 1080w" /> </a>
+                        </div>
+                        <div class="leftheadingmain">
+                           <h2 class="leftheading1"><a class="leftlink1" href="url_for('list_recipe',id=103)">Chicken Wontons in Spicy Chilli Sauce</a></h2>
+                           <p class="para">Big,beautiful,bossy flavors ahead! Shiitake mushrooms and chicken wontons swim in a brothy flavor-filled sauce and get finished with a swirl of sesame oil and chilli crisp on top.Yum!</p>
+                           <p class="leftpara"><a class="leftpara1" href="">Continue Reading</a></p>
+                        </div>
+                    </article>
+
+                    <article class="leftarticle">
+                       <div class="leftarticle1">
+                          <a class="leftlinkimage1" href="dinner.html">
+                          <img data-pin-description="We're making a summary salmon with a beautiful,big flavoured basil sauce that is so good,you're going to want to just drink it.Perfectly-spiced,fresh,and a dinner for everyone!" width="200" height="250" src="../static/images/salmon with basil.jpg" class="leftimage" alt="A picture of Salmon with Basil Sauce and Tomato salad" data-pin-nopin="true" sizes="(min-width: 1220px) 238px, (min-width: 780px) calc(21.43vw - 19px), 100vw" decoding="async" srcset="../static/images/salmon with basil.jpg 800w, ../static/images/salmon with basil.jpg 183w, ../static/images/salmon with basil.jpg 400w, ../static/images/salmon with basil.jpg 1200w,../static/images/salmon with basil.jpg  96w, ../static/images/salmon with basil.jpg 225w, ../static/images/salmon with basil.jpg 360w, ../static/images/salmon with basil.jpg 640w, ../static/images/salmon with basil.jpg 720w, ../static/images/salmon with basil.jpg 960w, ../static/images/salmon with basil.jpg  1080w" /> </a>
+                       </div>
+                       <div class="leftheadingmain">
+                           <h2 class="leftheading1"><a class="leftlink1" href="#">Salmon with Basil Sauce and Tomato Salad</a></h2>
+                           <p class="para">We're making a summary salmon witha beautiful,big-flavoured Basil sauce that is so good,You're going to want to just drink it. Perfectly-spiced,fresh,and a dinner for everyone!</p>
+                           <p class="leftpara"><a class="leftpara1" href="dinner.html">Continue Reading</a></p>
+                       </div>
+                    </article>
+
+                    <article class="leftarticle">
+                       <div class="leftarticle1">
+                         <a class="leftlinkimage1" href="breakfast.html">
+                         <img data-pin-description="Best pancakes I've ever made! Super basic,thick and fluffy blueberry pancakes-melt in your mouth,golden brown,and bursting with blueberries. " width="200" height="250" src="../static/images/blueberry pancakes12.jpg" class="leftimage" alt="A picture of fluffiest bluberry pancakes" data-pin-nopin="true" sizes="(min-width: 1220px) 238px, (min-width: 780px) calc(21.43vw - 19px), 100vw" decoding="async" srcset="../static/images/blueberry pancakes12.jpg, ../static/images/blueberry pancakes12.jpg 183w, ../static/images/blueberry pancakes12.jpg 400w, ../static/images/blueberry pancakes12.jpg 1200w,../static/images/blueberry pancakes12.jpg  96w, ../static/images/blueberry pancakes12.jpg 225w, ../static/images/blueberry pancakes12.jpg 360w, ../static/images/blueberry pancakes12.jpg 640w, ../static/images/blueberry pancakes12.jpg 720w, ../static/images/blueberry pancakes12.jpg 960w, ../static/images/blueberry pancakes12.jpg 1080w" /> </a>
+                       </div>
+                       <div class="leftheadingmain">
+                          <h2 class="leftheading1"><a class="leftlink1" href="#">Fluffiest Blueberry Pancakes</a></h2>
+                          <p class="para">Best pancakes I've ever made! Super basic,thick and fluffy blueberry pancakes-melt in your mouth,golden brown,and bursting with blueberries.</p>
+                          <p class="leftpara"><a class="leftpara1" href="breakfast.html">Continue Reading</a></p>
+                        </div> 
+                    </article>
+                   </div>
+                   <div class="viewmore">
+                      <a class="button" href="featu">View More</a>
+                   </div>
+               </div>
+             </div>
+           </section>
+           <aside class="Right">
+           <section class="Rightsection" >
+               <img src="../static/images/bck.jpg">
+               <h3 class="Rightsec1">Recipe Collections</h3>
+               <ol>
+                  <li class="Rightsec1list ">
+                     <a class="Rightlink" href="Quick_and_easy_Recipes.html">
+                     <span class="Rightlist">Quick &amp Easy Recipes</span>
+                     </a>
+                  </li>
+                   <li class="Rightsec1list ">
+                      <a class="Rightlink" href="pasta.html">
+                      <span class="Rightlist">Pasta Recipes</span>
+                      </a>
+                   </li>
+                   <li class="Rightsec1list ">
+                    <a class="Rightlink" href="Soup_recipes.html">
+                    <span class="Rightlist">Soup Recipes</span>
+                    </a>
+                </li>
+                <li class="Rightsec1list ">
+                    <a class="Rightlink" href="Vegan.html">
+                    <span class="Rightlist">Vegan Recipes</span>
+                    </a>
+                    </li>
+                    <li class="Rightsec1list ">
+                        <a class="Rightlink" href="Salads.html">
+                        <span class="Rightlist">Salad Recipes</span>
+                        </a>
+                    </li>
+                    <li class="Rightsec1list ">
+                        <a class="Rightlink" href="Rice.html">
+                        <span class="Rightlist">Rice Recipes</span>
+                        </a>
+                    </li>
+                    <li class="Rightsec1list ">
+                        <a class="Rightlink" href="Burger.html">
+                        <span class="Rightlist">Burgers</span>
+                        </a>
+                    </li>         
+                 </ol>
+                </section>
+                </aside>
+                 
+                 <section class="footer">
+                    <div class="footer-1">
+                      <div>
+                    
+                        <h4>Recipe hub</h4>
+                        <ul class="footerlist">
+                            <li><a href="/">HOME</a></li>
+                            <li><a href="/recipe">RECIPES</a></li>
+                            <li><a href="/categ">AUTHORS</a></li>
+                            <li><a href="/index/">SHARED RECIPES</a></li>
+                            <li><a href="/featu">FEATURED RECIPES</a></li>
+                            <li><a href="/logout/">Logout</a></li>
+
+                        </ul>
+                       </div>
+                     </div>
+                 </section>
+                 <section class="iconsection">
+                    <div class="iconsec1">
+                      <div class="icondiv">
+                      <h5 class="head1">Follow Us</h5>
+                      <a target="_blank" class="icon" href="#" ><svg class="i1"><title>INSTAGRAM</title><use xlink:href="#sprite-icon-instagram"></use></svg></a>
+                      <a target="_blank" class="icon" href="#" ><svg class="i1"><title>PINTEREST</title><use xlink:href="#sprite-icon-pinterest"></use></svg></a>
+                      <a target="_blank" class="icon" href="#" ><svg class="i1"><title>FACEBOOK</title><use xlink:href="#sprite-icon-facebook"></use></svg></a>
+                      <a target="_blank" class="icon" href="#" ><svg class="i1"><title>TWITTER</title><use xlink:href="#sprite-icon-twitter"></use></svg></a>
+                    </div>
+                   </div>
+                </section>
+                    
