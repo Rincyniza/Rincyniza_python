@@ -1,0 +1,55 @@
+body{
+    
+    margin :0;
+    background-repeat : no-repeat;
+    background-position: left  100px ;
+    background-size: 55% 130%;
+    
+    
+}
+.head-tag{
+    float : right;
+    margin-top:30px;
+    margin-right: 50px;
+    color: brown
+ }
+ .head-tag a{
+    font-family:sans-serif;
+    text-decoration: none;
+    color: black;
+    border:none;
+    padding: 8px;
+    margin-right: 0px;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+.head-tag a:hover{
+   background-color: brown;
+}
+
+.section-form{
+    background-color:chocolate;
+    border-radius: 1rem;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+.label{
+    color:black;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.input{
+    display: block;
+    width: 50%;
+    
+    
+
+}
+.linklogin{
+    color:black;
+}
