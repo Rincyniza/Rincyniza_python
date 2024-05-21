@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Recipe - Recipe hub</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+  
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login">Login</a>
+          <a href="/register/">Register </a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="/categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+
+        </div>
+        
+    </header>
+
+    <h1 class="details">All Recipes</h1>
+    <table  class="table" border="1px">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Ingredients</th>
+                <th>Instructions</th>
+                <th>Cooking_time</th>
+                <th>Serving_size</th>
+                <th>User Id</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in sqldata %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td>{{i[3]}}</td>
+                <td>{{i[4]}}</td>
+                <td>{{i[5]}}</td>
+                <td>{{i[6]}}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
+</body>
+</html>
