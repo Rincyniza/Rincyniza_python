@@ -1,0 +1,192 @@
+body{
+    
+    margin :0;
+    background-repeat : no-repeat;
+    background-position: left  100px ;
+    background-size: 55% 130%;
+    
+    
+}
+.head-tag{
+    float : right;
+    margin-top:30px;
+    margin-right: 50px;
+    color: brown
+ }
+ .head-tag a{
+    font-family:sans-serif;
+    text-decoration: none;
+    color: black;
+    border:none;
+    padding: 8px;
+    margin-right: 0px;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+.head-tag a:hover{
+   background-color: brown;
+}
+
+.Recipe-header{
+    background-color: #f3f4f6;
+}
+
+.Recipe-header1{
+    background-color: #8b5cf6;
+
+}
+
+
+.Recipe-heading{
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top: 1.25rem;
+    text-align: center;
+    max-width: 56rem;
+}
+
+.Recipe-header-heading{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    max-width:56rem;
+}
+
+h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    margin-right: -495px;
+}
+
+
+.Recipe-section{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    max-width: 64rem;
+}
+
+.unordered-list{
+    margin-top: 3rem;
+    gap:5rem;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    padding-bottom: 1.5rem;
+    text-align: center;
+    margin-left: 290px;
+
+    
+}
+
+.link{
+    display: block;
+    display: flex;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.image-det{
+
+    object-fit: cover;
+    width: 6rem;
+    height: 6rem;
+}
+
+h3{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0;
+    line-height: 1.25;
+    color: #000000;
+    text-transform: none;
+    
+}
+
+
+
+/*-----footer---*/
+.footer{
+    border-top-width: 1px;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background-color: #f3f4f6;
+  }
+  
+  .footer1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    padding-top: 2.5rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    max-width: 72rem;
+  }
+  
+  
+  .footerlist{
+    margin-bottom: 0.5rem;
+    font-size: medium;
+    line-height: 1.1rem;
+    font-style: normal;
+    color:black;
+    text-transform: uppercase;
+  }
+  h4{
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:oblique;
+    color: chocolate;
+  }
+  .iconsection{
+    min-width: 1024px;
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #8B5CF6;
+  
+  }
+  .iconsec1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 72rem;
+  }
+  .icondiv{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 14rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .head1{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .icon{
+    display: block;
+    justify-content: center;
+    border-radius: 9999px;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #8B5CF6;
+    background-color: #ffffff;
+  
+  }
+  .icon:hover{
+    opacity: 50%;
+  }
+  .i1{
+    width: 2rem;
+    height: 2rem;
+  }
