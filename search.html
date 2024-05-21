@@ -1,0 +1,26 @@
+<!-- Search Bar -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-  
+        scale=1">
+        <link rel="stylesheet" href="..static/home.css">
+        
+    </head>
+    <body>
+        <h1>labels</h1>
+        <form class="example" method="post" action="/search" 
+         style="margin:auto;max-width:600px">
+            <input type="text" placeholder="Search by title or " name="labels" value="{{ request.form.search}}">
+            <button type="submit"><i class="fa fa-search" value="search"></i>
+            </button>
+        </form>
+        <p></p>
+        
+    {% for message in get_flashed_messages() %}
+<div class=flash>
+    {{ message }}
+    {% endfor %}
+</div>
+    </body>
+</html>
