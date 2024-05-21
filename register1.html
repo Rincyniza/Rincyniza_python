@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Recipe hub</title>
+    <link rel="stylesheet" href="../static/css/share.css">
+
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login/">Login</a>
+          <a href="/register">Register</a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="/categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+
+        </div>
+    
+
+  <div class="container">
+      <div class="row">
+        <div >
+          <div >
+            <div class="card-body">
+              <section class="section-form">
+                <h2>Sign Up</h2>
+              <form class="form" action ="/register/" method="post">
+              
+              
+                <fieldset>
+            
+                  <ol>
+                  <li>
+                  <label class="label"for="id">ID</label>
+                  <input
+                   id="id"
+                   type="text"
+                   class="input"
+                   placeholder="Enter ID"
+                   name="id"
+                   />
+                   </li>
+               <li>
+               <div class="mb-3">
+                <label class="label" for="username">Username</label>
+                <input
+                 id="username"
+                 type="text"
+                 class="input"
+                 placeholder="Enter Username"
+                 name="username"
+                />
+               </li>
+               
+              <li>
+                <label class="label"for="name">Email Address</label>
+                <input
+                 id="email address"
+                 type="text"
+                 class="input"
+                 placeholder="Enter your email address"
+                 name="email_address"
+                 
+                /></li>
+              </li>
+               
+               <li>
+                  <label class="label"for="password">Password</label>
+                  <input
+                 id="instructions"
+                 type="password"
+                 class="input"
+                 placeholder="Enter a password here"
+                 name="password"
+                 
+                />
+               </li>
+               <li>
+                <label class="label"for="confirm password">Confirm Password</label>
+                <input
+               id="confirm_password"
+               type="password"
+               class="input"
+               placeholder="Re-type your password again"
+               name="confirm_password"
+              />
+               </li>
+             
+             
+                
+              <div class=" text-center">
+                
+                 <button class="btn" type="submit",style="background-color: #39B5E0;">
+                  Register
+                 </button>
+                 {{msg}}
+                 
+               </div>
+              </form>
+           </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
+    
+</body>
+</html>
+    
+</body>
+</html>
