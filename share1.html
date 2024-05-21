@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/share.css">
+  
+</head>
+
+<body background="../static/images/images.jpg">
+  {% if session.logged_in %}
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login/">Login</a>
+          <a href="/register">Register </a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+
+        </div>
+    
+  
+  <div class="container">
+      <div class="row">
+        <div >
+          <div >
+            <div class="card-body">
+              <section class="section-form">
+                <h2>Share a Recipe</h2>  
+              <form class="form" action ="share1" method="post">
+              
+              
+                <fieldset>
+            
+                  <ol>
+                  <li>
+                  <label class="label"for="id">ID</label>
+                  <input
+                   id="id"
+                   type="text"
+                   class="input"
+                   placeholder="Enter ID"
+                   name="id"
+                   />
+                   </li>
+               <li>
+               <div class="mb-3">
+                <label class="label" for="name">Name</label>
+                <input
+                 id="name"
+                 type="text"
+                 class="input"
+                 placeholder="Enter Name"
+                 name="name"
+                />
+               </li>
+               
+              <li>
+                <label class="label"for="name">Ingredients</label>
+                <textarea
+                 id="ingredients"
+                 type="text"
+                 class="input"
+                 placeholder="Enter ingredients"
+                 name="ingredients"
+                 rows="20"
+                ></textarea></li>
+              </li>
+               
+               <li>
+                  <label class="label"for="instruction">Instructions</label>
+                  <textarea
+                 id="instructions"
+                 type="text"
+                 class="input"
+                 placeholder="Enter instructions"
+                 name="instructions"
+                 rows="20"
+                ></textarea>
+               </li>
+               <li>
+                <label class="label"for="cookingtime">cooking_time</label>
+                <textarea
+               id="cooking_time"
+               type="text"
+               class="input"
+               placeholder="Enter cooking_time"
+               name="cooking_time"
+              ></textarea>
+               </li>
+             <li>
+                <label class="label"for="serving_size">serving_size</label>
+                <input
+               id="serving_size"
+               type="text"
+               class="input"
+               placeholder="Enter serving_size"
+               name="serving_size"
+              />
+             </li>
+             <li>
+                <label class="label"for="user_id">user_id</label>
+                <input
+               id="user_id"
+               type="user_id"
+               class="input"
+               placeholder="user_id"
+               name="user_id"
+              />
+             </li>
+             <li>
+               <label class="label" for="image">Image</label>
+               <input type="file"name="image" accept="image/*">
+             </li>
+             
+              
+              
+              
+                
+              <div class=" text-center">
+                
+                 <button class="btn" type="submit",style="background-color: #39B5E0;">
+                  Add Recipe
+                 </button>
+                 {{msg}}
+               </div>
+              </form>
+              
+           </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endif %}
+</body>
+</html>
