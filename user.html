@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page - Recipe hub</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+  
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login/">Login</a>
+          <a href="/register">Register </a>
+          <a href="recipe">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="/categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+
+        </div>
+        <form class="example" action="">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="gg-search"></i></button>
+        </form>
+    </header>
+
+
+
+    <p class="user-heading">Welcome {{user}}!</p>
+    
+
+
+              {{msg}}
+</body>
+</html>
