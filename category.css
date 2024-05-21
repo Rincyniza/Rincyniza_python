@@ -1,0 +1,220 @@
+body{
+    
+    margin :0;
+    background-repeat : no-repeat;
+    background-position: left  100px ;
+    background-size: 55% 130%;
+    
+    
+}
+.head-tag{
+    float : right;
+    margin-top:30px;
+    margin-right: 50px;
+    color: brown
+ }
+ .head-tag a{
+    font-family:sans-serif;
+    text-decoration: none;
+    color: black;
+    border:none;
+    padding: 8px;
+    margin-right: 0px;
+    font-size: small;
+    font-weight: bold;
+    text-transform: uppercase;
+   
+}
+.head-tag a:hover{
+   background-color: brown;
+}
+
+.Recipe-header{
+    background-color: #f3f4f6;
+}
+
+.Recipe-header1{
+    background-color: #8b5cf6;
+
+}
+
+
+.Recipe-heading{
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-top: 1.25rem;
+    text-align: center;
+    max-width: 56rem;
+}
+
+.Recipe-header-heading{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    max-width:56rem;
+}
+
+h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    margin-right: -495px;
+}
+
+.categsection{
+    padding-left:1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 64rem;
+}
+
+.categheader{
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom-width: 1px;
+    border-color: aquamarine;
+
+}
+
+h2{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.unorderedlist{
+
+    display: grid;
+    margin-left: 0.5rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 2rem;
+
+}
+
+.list{
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    flex-direction: row;
+    
+}
+
+.link{
+    display: flex;
+    margin-left: 0.5rem;
+    flex-direction: row;
+    text-decoration: none;
+    color: brown;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.quantity{
+    font-size: medium;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----footer---*/
+.footer{
+    border-top-width: 1px;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background-color: #f3f4f6;
+  }
+  
+  .footer1{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    padding-top: 2.5rem;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    max-width: 72rem;
+  }
+  
+  
+  .footerlist{
+    margin-bottom: 0.5rem;
+    font-size: medium;
+    line-height: 1.1rem;
+    font-style: normal;
+    color:black;
+    text-transform: uppercase;
+  }
+  h4{
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style:oblique;
+    color: chocolate;
+  }
+  .iconsection{
+    min-width: 1024px;
+    padding: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #8B5CF6;
+  
+  }
+  .iconsec1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 72rem;
+  }
+  .icondiv{
+    display: flex;
+    margin-bottom: 2rem;
+    margin-left: 14rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .head1{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .icon{
+    display: block;
+    justify-content: center;
+    border-radius: 9999px;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #8B5CF6;
+    background-color: #ffffff;
+  
+  }
+  .icon:hover{
+    opacity: 50%;
+  }
+  .i1{
+    width: 2rem;
+    height: 2rem;
+  }
