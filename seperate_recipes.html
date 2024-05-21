@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{recipe[1]}}-Recipe hub - A recipe sharing website for cooking enthusiasts</title>
+    <link rel="stylesheet" href="../static/css/home.css">
+  
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login/">Login</a>
+          <a href="/register">Register </a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="/categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+
+      </div>
+        <form class="example" action="/search"method="post">
+            <input type="text" placeholder="Search by title" id="keyword"name="labels" value=" ">
+            <button type="submit"><i class="gg-search"></i></button>
+        </form>
+       
+    </header>
+    <div>
+        <h3>Recipe Id:{{recipe[0]}}</h3>
+    </div>
+    <div class="time">
+     <h1>{{recipe[1]}} </h1><span>Cooking time: {{recipe[4]}}</span>   &nbsp&nbsp&nbsp&nbsp <span>Serving size:{{recipe[5]}}</span>
+    </div>
+<div style="max-width: 70%; margin: auto; padding-top:3%">
+  <div class="media">
+      <img src="" class="mr-3" alt="" width="20%" height="20%">
+      <div class="media-body">
+        <h2>Ingredients</h2>
+        {{recipe[2]}}
+        
+      </div>
+  </div><br>
+     <h2>Instructions</h2>
+        {{recipe[3]}}<br>
+    
+  
+</div>
+ 
+<h2>Comments</h2>
+<ul>   
+    {% for content in Comments %}
+       
+    <li style="color:brown; font-size:medium;line-height: normal;">
+        <p>{{content[0]}} </p>  
+        {{content[1]}}
+        {{content[2]}}
+       
+    </li>
+    {% endfor %}
+   
+    
+
+    
+    {% if session.logged_in %}
+    
+
+    
+</ul>
+<form method="POST" action="/comment/">
+    <label for ="content">Leave a comment:</label>
+    <textarea name="content" required></textarea>
+    <label for="id">Recipe Id:</label>
+    <textarea type="id" name="recipe_id" ></textarea>
+    <label for="comment_id">Id:</label>
+    <textarea type="comment_id" name="comment_id" ></textarea>
+    <label for="date_posted">Date posted:</label>
+    <textarea type="date" name="date_posted" ></textarea>
+    <input type="submit" value="Submit Comment"> 
+</form>
+{{msg}}
+<section class="footer">
+    <div class="footer-1">
+      <div>
+    
+        <h4>Recipe hub</h4>
+        <ul class="footerlist">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/recipes">RECIPES</a></li>
+            <li><a href="/categ">AUTHORS</a></li>
+            <li><a href="/share1">SHARE RECIPES</a></li>
+            <li><a href="/featu">FEATURED RECIPES</a></li>
+            <li><a href="/logout/">Logout</a></li>
+
+        </ul>
+       </div>
+     </div>
+ </section>
+   {% endif %}
+</body>
+</html>
