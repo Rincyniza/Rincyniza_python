@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Recipe hub</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login/">Login</a>
+          <a href="/register/">Register </a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+
+        
+        </div>
+      </header>
+
+      <main class="main-form">
+        <section class="section-form">
+        <h2>Log in</h2>
+        <form id="login-form" action="/login/"  method="post">
+          <fieldset>
+           <ol>
+             <li>
+                   <label class="label" for="username">Username</label>
+                   <input class="input" type="text" name="username" id="username" placeholder="Enter your username here">
+             </li>
+             <li>
+                <label class="label" for="email">Email</label>
+                <input  class="input" type="email" name="email" id="email" placeholder="Enter your email id here">
+             </li>
+             <li>
+                   <label class="label" for="password">Password</label>
+                   <input class="input" type="password" name="password" id="password" placeholder="Enter your password here">
+             </li>
+
+            </ol>
+             
+             <label><input type="checkbox" name="auto_login" id="auto_login" value="1" /> Keep me logged in</label>
+            <p><button type="submit">Log In</button></p>
+            
+              
+           
+        </fieldset>
+        </form>
+        
+        <p>
+        <a class="linklogin"href="/register/">Need to sign up?</a><br>
+        </p>
+      {{error}}
+        
+        </section>
+
+
+    
+</body>
+</html>
