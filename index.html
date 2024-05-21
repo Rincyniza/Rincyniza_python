@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Recipes - Recipe hub</title>
+    <link rel="stylesheet" href="../static/css/share.css">
+    
+</head>
+<body background="../static/images/images.jpg">
+    <header>
+        <img src="../static/images/logo.png" width ="15%" height="15%">
+        <!---head tag-->
+        <div class ="head-tag">
+          <a href="/">Home</a>
+          <a href="/login">Login</a>
+          <a href="/register/">Register </a>
+          <a href="/recipes">Recipes</a>
+          <a href="/featu">Featured Recipes</a>
+          <a href="/categ">Categories </a>
+          <a href="/share1">Share Recipes</a>
+          <a href="/index/">Shared Recipes</a>
+          <a href="/view1">view recipes</a>
+        </div>
+      </header>
+    <h1>Shared Recipies</h1>
+    <ul>
+        {% for recipe in recipes %}
+          <li class="shared_list">
+            <a href="{{url_for('list_recipe',id=recipe[0])}}">{{recipe[1]}}</a>
+          
+            
+            
+        </li> 
+        {% endfor %}
+    </ul>
+   
+</body>
+</html>
